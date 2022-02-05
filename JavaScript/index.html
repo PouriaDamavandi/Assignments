@@ -7,41 +7,63 @@
     <title>javaScript</title>
   </head>
   <body>
+    <button type="button" onclick="calcArea()">Click!</button>
+    <button type="button" onclick="getData()">get data</button>
+    <p id="demo"></p>
+    ...
     <script>
-      var age = 32;
-      var fName = "Pouria'Elia'";
-      var lName = "Damavandi";
-      console.log(fName);
-      //  alert for finding the value in the codes
-      //  alert is not usefull for making a website or basically a project
-      var isSingle = false; // bolean
-      var address;
-      console.log(address); // undefined
-      var address = "Iran - Tehran";
-      console.log(address); // defined
-      //
-      var p = 3.14;
-      var r = 23;
+      // var age = 32;
+      // var fName = "Pouria'Elia'";
+      // var lName = "Damavandi";
+      // console.log(fName);
+      // //  alert for finding the value in the codes
+      // //  alert is not usefull for making a website or basically a project
+      // var isSingle = false; // bolean
+      // var address;
+      // console.log(address); // undefined
+      // var address = "Iran - Tehran";
+      // console.log(address); // defined
+      // //
+      // var p = 3.14;
+      // var r = 23;
 
-      var area;
-      var s;
+      // var area;
+      // var s;
 
-      var area = p * 2 * r;
-      var s = r * r * p;
-      console.log(area);
-      console.log(s);
-      console.log("area=" + area);
-      console.log("s=" + s);
+      // var area = p * 2 * r;
+      // var s = r * r * p;
+      // console.log(area);
+      // console.log(s);
+      // console.log("area=" + area);
+      // console.log("s=" + s);
 
-      var age = 32;
-      var birthday = 1989;
+      // var age = 32;
+      // var birthday = 1989;
 
-      console.log(age + birthday);
+      // console.log(age + birthday);
 
-      console.log("6+2=", 6 + 2);
-      console.log("6-2=", 6 - 2);
-      console.log("6/2=", 6 / 2);
-      console.log("6*2=", 6 * 2);
+      // console.log("6+2=", 6 + 2);
+      // console.log("6-2=", 6 - 2);
+      // console.log("6/2=", 6 / 2);
+      // console.log("6*2=", 6 * 2);
+      // var p = 3.14;
+      // var r = 23;
+
+      // var area;
+      // var s;
+
+      // var area = p * 2 * r;
+      // var area = r * r * p;
+
+      function calcArea() {
+        var p = 3.14;
+        var r = 23;
+        var area = r * r * p;
+        document.getElementById("demo").innerHTML = area;
+      }
+      function getData() {
+        alert(document.getElementById("demo").innerHTML);
+      }
     </script>
   </body>
 </html>
