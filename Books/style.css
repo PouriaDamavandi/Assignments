@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+}
+/* .menu {
+  height: 50px;
+  background-color: rgb(49, 46, 46);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+.bookContainer {
+  margin: auto auto;
+  margin-top: 20px;
+  background-color: white;
+  width: 400px;
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 2px 4px;
+  font-family: Lalezar;
+}
+body {
+  /* background-color: rgb(255, 213, 239); */
+  background-image: url(Img/texture.jpg);
+}
+img {
+  width: 400px;
+  border-radius: 10px;
+}
+h3 {
+  color: brown;
+  width: 400px;
+}
+p {
+  width: 400px;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+}
+/* a:link {
+  color: rgb(255, 213, 239);
+  background-color: black;
+  text-decoration: none;
+  text-align: center;
+  padding: 75px;
+  font-size: 20px;
+  font-family: Lalezar;
+}
+
+a:visited {
+  color: rgb(249, 249, 253);
+  background-color: transparent;
+  text-decoration: none;
+  padding: 100px;
+  text-align: center;
+  font-family: Lalezar;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+  padding: 100px;
+  text-align: center;
+  font-family: Lalezar;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+  padding: 100px;
+  text-align: center;
+  font-family: Lalezar;
+} */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 75.5px;
+  text-decoration: none;
+  font-family: lalezar;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active1 {
+  background-color: #ff0000;
+}
+.active2 {
+  background-color: #79c57d;
+}
+.active3 {
+  background-color: #ee2367;
+}
+.active4 {
+  background-color: #349270;
+}
+.active5 {
+  background-color: #034ca0;
+}
+.active6 {
+  background-color: #54927b;
+}
+.active7 {
+  background-color: #d113d1;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  font-family: lalezar;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
