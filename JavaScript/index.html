@@ -64,6 +64,14 @@
       function getData() {
         alert(document.getElementById("demo").innerHTML);
       }
+
+      function calcTax(fee) {
+        var darsad = 0.09;
+        var tax = fee * darsad;
+        var total = fee + tax;
+
+        return total;
+      }
     </script>
   </body>
 </html>

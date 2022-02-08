@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="bYear" />
+    <button onclick="getData()">click</button>
+    <p id="age"></p>
+
+    <script>
+      function getData() {
+        var bYear = document.getElementById("bYear").value;
+        var age = calcAge(bYear);
+        document.getElementById("age").innerHTML = age;
+      }
+      function calcAge(bYear) {
+        const currentYear = 1400;
+        var age = currentYear - bYear;
+        return age;
+      }
+    </script>
+  </body>
+</html>
