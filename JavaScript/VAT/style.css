@@ -15,7 +15,7 @@ header {
   font-weight: bolder;
   padding: 4vh;
 }
-ul {
+/* ul {
   list-style-type: none;
   overflow: hidden;
   border: 1px solid #000000;
@@ -35,11 +35,12 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
+} */
 
 .container {
   margin: auto auto;
   margin-top: 3vh;
+  margin-right: 3vh;
   width: 80vw;
   align-content: center;
   background-color: rgb(228, 233, 233);
