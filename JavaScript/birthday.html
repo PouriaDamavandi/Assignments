@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- change default title -->
-    <title>Document</title>
+    <title>Birthday</title>
   </head>
   <body>
     <!-- //add type and placeHolder attribute -->
-    <input id="bYear" /> 
+    <input id="bYear" placeholder="Like 1368" />
     <button onclick="getData()">click</button>
     <p id="age"></p>
 
     <script>
       function getData() {
-        var bYear = document.getElementById("bYear").value;
-        var age = calcAge(bYear);
+        let bYear = document.getElementById("bYear").value;
+        let age = calcAge(bYear);
         document.getElementById("age").innerHTML = age;
       }
       function calcAge(bYear) {
-        var currentYear = 1400;
-        var age = currentYear - bYear;
+        let currentYear = 1400;
+        let age = currentYear - bYear;
         return age;
       }
     </script>
