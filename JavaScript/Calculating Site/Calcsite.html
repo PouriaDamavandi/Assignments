@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -125,7 +124,14 @@
           role="tabpanel"
           aria-labelledby="v-pills-settings-tab"
         >
-          ...
+          <div class="container">
+            <div class="innercontainer">
+              <input id="height" placeholder="قد به متر" />
+              <input id="weight" placeholder="وزن به کیلوگرم" />
+              <button onclick="getBmiData()">محاسبه کن</button>
+              <p id="bmi"></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -138,54 +144,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-=======
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Value Added Tax</title>
-</head>
-
-<body dir="rtl">
-  <header>محاسبه ی آنلاین مالیات بر ارزش افزوده</header>
-  <ul>
-    <li><a class="navbarlinks" href="VAT.html">صفحه اصلی</a></li>
-    <li><a class="navbarlinks" href="#VAT"> مالیات بر ارزش افزوده </a></li>
-  </ul>
-  <div class="container" id="VAT">
-    <div class="innercontainer">
-      <label> *مبلغ را به تومان وارد کنید*</label>
-      <input type="text" placeholder="مبلغ  قبل از تخفیف را وارد کنید" id="amount" />
-      <button onclick="valueAddedTax()">محاسبه کن</button>
-      <p id="demo1"></p>
-      <p id="demo2"></p>
-      <p class="warning">کلیه مبالغ به تومان می باشد.</p>
-    </div>
-  </div>
-  <footer>کلیه حقوق این سایت برای شرکت ... محفوظ است.</footer>
-  <script>
-    //break your code in 2 functions like this :
-      // function getVat(fee) {
-      //   var vatRatio = 0.09;
-      //   return fee * vatRatio;
-      // }
-    function valueAddedTax() {
-      var value = document.getElementById("amount").value;
-      var tax = 0.09;
-      var vat = Number(value) * tax; // use getVat function here
-      var finalPrice = vat + Number(value);
-      document.getElementById("demo1").innerHTML =
-        " مالیات بر ارزش افزوده کل = " + vat;
-      document.getElementById("demo2").innerHTML =
-        " مبلغ نهایی بعد از مالیات بر ارزش افزوده کل = " + finalPrice;
-    }
-  </script>
-</body>
-
->>>>>>> b4018533650af4473eded1ecad96b5b679cff307
 </html>
