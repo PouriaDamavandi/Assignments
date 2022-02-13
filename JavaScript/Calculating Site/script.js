@@ -1,3 +1,5 @@
+// Nav Sidebar JS codes !
+
 function openLinks(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -12,7 +14,7 @@ function openLinks(evt, tabName) {
     evt.currentTarget.className += " active";
   }
 
-
+       //  Vat calculating Scripts
         //break your code in 2 functions like this :
       // function getVat(fee) {
       //   var vatRatio = 0.09;
@@ -44,7 +46,9 @@ function openLinks(evt, tabName) {
         let totalPrice = Number(amount) + tax;
         return Number(totalPrice);
       }
+ 
 
+      //  BMI Calculating Scripts !
 
       function getBmiData() {
         let height = document.getElementById("height").value;
@@ -71,4 +75,25 @@ function openLinks(evt, tabName) {
       function calcBmi(height,weight) {
         var bmi = weight / (height * height);
         return bmi;
+      }
+
+
+      // Radius Calculating Scripts !
+
+      function calcArea() {
+        var p = 3.14;
+        var r = 23;
+        var area = r * r * p;
+        document.getElementById("demo3").innerHTML = area;
+      }
+      function getData() {
+        alert(document.getElementById("demo3").innerHTML);
+      }
+
+      function calcTax(fee) {
+        var darsad = 0.09;
+        var tax = fee * darsad;
+        var total = fee + tax;
+
+        return total;
       }
