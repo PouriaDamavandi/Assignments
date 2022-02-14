@@ -25,26 +25,18 @@ function openLinks(evt, tabName) {
       
       
       function valueAddedTax() {
-      //   let percent = 0.09;
-      //   let tax = Number(amount) * percent;
-      //   let value = document.getElementById("amount").value;
-      //   let vat = value; // use getVat function here
-      //   let totalPrice = Number(vat) + Number(tax) ;
-      //   document.getElementById("demo1").innerHTML =
-      //     " مالیات بر ارزش افزوده کل = " + tax;
-      //   document.getElementById("demo2").innerHTML =
-      //     " مبلغ نهایی بعد از مالیات بر ارزش افزوده کل = " + totalPrice;
-
-      let total = getVat(amount) 
-      document.getElementById("demo2").innerHTML = total;
+        let value = document.getElementById("amount").value;
+        document.getElementById("demo1").innerHTML =
+          " مالیات بر ارزش افزوده کل = " + getVat(value);
+        document.getElementById("demo2").innerHTML =
+          " مبلغ نهایی بعد از مالیات بر ارزش افزوده کل = " + (Number(value) + getVat(value));
 
       }
 
       function getVat(amount) {
         let percent = 0.09;
       let tax = Number(amount) * percent;
-        let totalPrice = Number(amount) + tax;
-        return Number(totalPrice);
+        return Number(tax);
       }
  
 
