@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+
+div {
+  margin: auto auto;
+  background-color: rgb(5, 88, 9);
+  width: 100%;
+  height: fit-content;
+}
+
+#countdown {
+  color: blanchedalmond;
+  text-align: center;
+  font-size: xx-large;
+}
