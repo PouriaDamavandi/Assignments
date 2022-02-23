@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 30vw;
+  margin: auto auto;
+  margin-top: 20vh;
+  background-image: linear-gradient(180deg, rgb(65, 3, 145), rgb(109, 99, 255));
+  flex: auto;
+  height: 40vh;
+  border: 2px solid;
+  border-radius: 30px;
+  font-size: xx-large;
+  color: rgb(241, 238, 232);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  box-shadow: black 0.5vw 1vh;
+}
+
+input {
+  padding: 0.5vw;
+  margin: 0.5vh;
+  border-radius: 10px;
+}
+
+button {
+  padding: 0.5vw;
+  margin: 0.5vh;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+#demo {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  color: rgb(74, 247, 247);
+}
