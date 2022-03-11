@@ -45,7 +45,7 @@ function openLinks(evt, tabName) {
       function getBmiData() {
         let height = document.getElementById("height").value;
         let weight = document.getElementById("weight").value;
-        let bmi = calcBmi(height,weight);
+        let bmi = Math.trunc(calcBmi(height,weight));
         // document.getElementById("bmi").innerHTML = bmi;
         if (bmi < 18.5) {
           document.getElementById("bmi").innerHTML =
